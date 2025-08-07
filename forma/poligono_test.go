@@ -5,7 +5,7 @@ import (
 )
 
 func TestPoligonoObterArea(t *testing.T) {
-	p := Poligono{numeroDeFaces: 6, tamanhoDaFace: 2}
+	p := Poligono{NumeroDeFaces: 6, TamanhoDaFace: 2}
 	expected := (p.ObterPerimetro() / 2) * p.calcularApotema()
 	area := p.ObterArea()
 	if area != expected {
@@ -14,7 +14,7 @@ func TestPoligonoObterArea(t *testing.T) {
 }
 
 func TestPoligonoObterPerimetro(t *testing.T) {
-	p := Poligono{numeroDeFaces: 5, tamanhoDaFace: 3}
+	p := Poligono{NumeroDeFaces: 5, TamanhoDaFace: 3}
 	expected := 5 * 3.0
 	perimetro := p.ObterPerimetro()
 	if perimetro != expected {
@@ -31,21 +31,21 @@ func TestPoligonoString(t *testing.T) {
 }
 
 func BenchmarkPoligonoObterArea(b *testing.B) {
-	p := Poligono{numeroDeFaces: 6, tamanhoDaFace: 2}
+	p := Poligono{NumeroDeFaces: 6, TamanhoDaFace: 2}
 	for i := 0; i < b.N; i++ {
 		p.ObterArea()
 	}
 }
 
 func BenchmarkPoligonoObterPerimetro(b *testing.B) {
-	p := Poligono{numeroDeFaces: 5, tamanhoDaFace: 3}
+	p := Poligono{NumeroDeFaces: 5, TamanhoDaFace: 3}
 	for i := 0; i < b.N; i++ {
 		p.ObterPerimetro()
 	}
 }
 
 func BenchmarkPoligonoString(b *testing.B) {
-	p := Poligono{numeroDeFaces: 3, tamanhoDaFace: 1}
+	p := Poligono{NumeroDeFaces: 3, TamanhoDaFace: 1}
 	for i := 0; i < b.N; i++ {
 		p.String()
 	}

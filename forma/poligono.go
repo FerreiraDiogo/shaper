@@ -4,8 +4,8 @@ import "math"
 
 // Poligono representa um polígono regular com número de faces e tamanho da face.
 type Poligono struct {
-	numeroDeFaces int
-	tamanhoDaFace float64
+	NumeroDeFaces int
+	TamanhoDaFace float64
 }
 
 // ObterArea retorna a área do polígono regular.
@@ -15,7 +15,7 @@ func (p Poligono) ObterArea() float64 {
 
 // ObterPerimetro retorna o perímetro do polígono regular.
 func (p Poligono) ObterPerimetro() float64 {
-	return p.tamanhoDaFace * float64(p.numeroDeFaces)
+	return p.TamanhoDaFace * float64(p.NumeroDeFaces)
 }
 
 // String retorna uma representação textual do polígono.
@@ -24,5 +24,5 @@ func (p Poligono) String() string {
 }
 
 func (p Poligono) calcularApotema() float64 {
-	return (p.tamanhoDaFace / 2) * math.Atanh(math.Pi/float64(p.numeroDeFaces))
+	return (p.TamanhoDaFace / 2) * math.Atanh(math.Pi/float64(p.NumeroDeFaces))
 }
