@@ -7,18 +7,18 @@ type Poligono struct {
 	tamanhoDaFace float64
 }
 
-func (c Poligono) ObterArea() float64 {
-	return (c.ObterPerimetro() / 2) * c.calcularApotema()
+func (p Poligono) ObterArea() float64 {
+	return (p.ObterPerimetro() / 2) * p.calcularApotema()
 }
 
-func (c Poligono) ObterPerimetro() float64 {
-	return c.tamanhoDaFace * float64(c.numeroDeFaces)
+func (p Poligono) ObterPerimetro() float64 {
+	return p.tamanhoDaFace * float64(p.numeroDeFaces)
 }
 
-func (c Poligono) String() string {
+func (p Poligono) String() string {
 	return "I just dont know what to do with myself...[rectangle]"
 }
 
-func (c Poligono) calcularApotema() float64 {
-	return (c.tamanhoDaFace / 2) * math.Atanh(math.Pi/float64(c.numeroDeFaces))
+func (p Poligono) calcularApotema() float64 {
+	return (p.tamanhoDaFace / 2) * math.Atanh(math.Pi/float64(p.numeroDeFaces))
 }

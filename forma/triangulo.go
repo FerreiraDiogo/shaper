@@ -4,14 +4,14 @@ type Triangulo struct {
 	base, altura, face float64
 }
 
-func (c Triangulo) ObterArea() float64 {
-	return (c.base * c.altura) / 2
+func (t Triangulo) ObterArea() float64 {
+	return (t.base * t.altura) / 2
 }
 
-func (c Triangulo) ObterPerimetro() float64 {
-	return c.face * 3
+func (t Triangulo) ObterPerimetro() float64 {
+	return t.face * 3
 }
 
-func (c Triangulo) String() string {
+func (t Triangulo) String() string {
 	return "I just dont know what to do with myself.[triangulo]]"
 }
