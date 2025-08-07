@@ -76,7 +76,7 @@ func TestCirculoObterPerimetro(t *testing.T) {
 
 func TestCirculoString(t *testing.T) {
 	c := Circulo{}
-	expected := "I just dont know what to do with myself..."
+	expected := "Circulo"
 	if c.String() != expected {
 		t.Errorf("String() = %q; want %q", c.String(), expected)
 	}

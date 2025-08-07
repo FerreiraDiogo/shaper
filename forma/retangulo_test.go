@@ -39,7 +39,7 @@ func BenchmarkRetanguloObterPerimetro(b *testing.B) {
 
 func TestRetanguloString(t *testing.T) {
 	r := Retangulo{}
-	expected := "I just dont know what to do with myself...[rectangle]"
+	expected := "Retangulo"
 	if r.String() != expected {
 		t.Errorf("String() = %q; want %q", r.String(), expected)
 	}

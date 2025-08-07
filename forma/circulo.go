@@ -17,7 +17,7 @@ func (c Circulo) ObterPerimetro() float64 {
 	return 2.0 * math.Pi * c.Raio
 }
 
-// String retorna uma representação textual do círculo.
+// String retorna o nome da implementação.
 func (c Circulo) String() string {
-	return "I just dont know what to do with myself..."
+	return "Circulo"
 }

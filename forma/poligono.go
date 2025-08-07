@@ -18,9 +18,9 @@ func (p Poligono) ObterPerimetro() float64 {
 	return p.TamanhoDaFace * float64(p.NumeroDeFaces)
 }
 
-// String retorna uma representação textual do polígono.
+// String retorna o nome da implementação.
 func (p Poligono) String() string {
-	return "I just dont know what to do with myself...[rectangle]"
+	return "Poligono"
 }
 
 func (p Poligono) calcularApotema() float64 {

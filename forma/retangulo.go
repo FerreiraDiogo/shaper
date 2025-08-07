@@ -17,7 +17,7 @@ func (r Retangulo) ObterPerimetro() float64 {
 	return math.Pow(r.Base, 2.0) + math.Pow(r.Altura, 2.0)
 }
 
-// String retorna uma representação textual do retângulo.
+// String retorna o nome da implementação.
 func (r Retangulo) String() string {
-	return "I just dont know what to do with myself...[rectangle]"
+	return "Retangulo"
 }

@@ -24,7 +24,7 @@ func TestTrianguloObterPerimetro(t *testing.T) {
 
 func TestTrianguloString(t *testing.T) {
 	tri := Triangulo{}
-	expected := "I just dont know what to do with myself.[triangulo]]"
+	expected := "Triangulo"
 	if tri.String() != expected {
 		t.Errorf("String() = %q; want %q", tri.String(), expected)
 	}

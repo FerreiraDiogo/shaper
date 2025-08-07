@@ -15,7 +15,7 @@ func (t Triangulo) ObterPerimetro() float64 {
 	return t.Face * 3
 }
 
-// String retorna uma representação textual do triângulo.
+// String retorna o nome da implementação.
 func (t Triangulo) String() string {
-	return "I just dont know what to do with myself.[triangulo]]"
+	return "Triangulo"
 }

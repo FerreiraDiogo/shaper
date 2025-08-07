@@ -24,7 +24,7 @@ func TestPoligonoObterPerimetro(t *testing.T) {
 
 func TestPoligonoString(t *testing.T) {
 	p := Poligono{}
-	expected := "I just dont know what to do with myself...[rectangle]"
+	expected := "Poligono"
 	if p.String() != expected {
 		t.Errorf("String() = %q; want %q", p.String(), expected)
 	}
